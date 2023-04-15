@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <!-- Web Title -->
+    <title>myTUNE! | Music is Passion!</title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/x-icon" href="./asset/img/thumbnail/thumbnail_global.png">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header id="heading-header">
+        <h1><i class='bx bxs-music'></i> myTUNE</h1>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#trending">TRENDING</a></li>
+            <li><a href="#top-playlist">TOP PLAYLIST</a></li>
+            <li><a href="#chart">CHART</a></li>
+            <li><a href="#radio">RADIO</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search something...">
+            <i class='bx bx-search-alt-2'></i>
+        </div>
+        <!-- Music Player Open Btn -->
+        <button class="play-open"><i class='bx bxs-music'></i></button>
+
+        <div class="now-playing-btn">
+            <button><i class='bx bxs-playlist'></i></button>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTAINER ========== -->
+    <div class="container">
+
+        <!-- Side Navbar -->
+        <div class="side-navbar">
+            <!-- Personal -->
+            <div class="personal">
+                <h2>My Account</h2>
+                <ul>
+                    <li><i class='bx bx-male'></i> Individual</li>
+                    <li><i class='bx bx-world'></i> Explore</li>
+                    <li><i class='bx bxs-bar-chart-alt-2' ></i> Label Chart</li>
+                    <li><i class='bx bxs-radio' ></i> Radio</li>
+                    <li><i class='bx bxs-plus-circle'></i> Following</li>
+                </ul>
+            </div>
+            <br>
+
+            <div class="line"></div>
+            
+            <!-- Scrollbar Section -->
+            <div class="scrollbar">
+                <!-- New & Genre -->
+                <div class="genre">
+                    <h2>World Musics</h2>
+                    <ul>
+                        <li><i class='bx bxs-music'></i> New Songs</li>
+                        <li><i class='bx bx-customize'></i> Genre</li>
+                        <li><i class='bx bx-bar-chart-alt-2'></i> Top 100</li>
+                        <li><i class='bx bxs-bar-chart-alt-2' ></i> Top MVs</li>
+                    </ul>
+                </div>
+
+                <!-- Premium -->
+                <div class="premium">
+                    <p>Listen to unlimited music</p>
+                    <p>with PREMIUM MUSIC</p>
+                    <button>to PREMIUM</button>
+                </div>
+
+                <!-- Library -->
+                <div class="library">
+                    <h2>Library</h2>
+                    <ul>
+                        <li><i class='bx bxs-music'></i> Songs</li>
+                        <li><i class='bx bx-folder-open'></i> Playlist</li>
+                        <li><i class='bx bx-folder'></i> Album</li>
+                        <li><i class='bx bx-upload' ></i> Uploaded</li>
+                        <li><i class='bx bxs-time' ></i> Recently</li>
+                        <br>
+                    </ul>
+                </div>
+
+                <div class="line"></div>
+
+                <!-- My Playlists -->
+                <div class="my-playlist">
+                    <h2>My Playlist</h2>
+                    <ul>
+                        <li>Daily #1</li>
+                        <li>Daily #2</li>
+                        <li>SOOBIN</li>
+                        <li>Son Tung M-TP</li>
+                        <li>SpaceSpeakers</li>
+                        <li>G-Dragon</li>
+                        <li>Charlie Puth</li>
+                        <li>N.T.K</li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Add Playlist -->
+            <div class="add-playlist">
+                <button>Add a Playlist</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content ml width_2">
+
+            <!-- Slider Collection -->
+            <div class="slider-gallery">
+
+                <!-- Slider Item -->
+                <div class="gallery-item">
+                    <img src="./asset/img/slider_gallery/slider_pic_6.jpg" alt="img">
+                </div>
+                <!-- Slider Item -->
+                <div class="gallery-item">
+                    <img src="./asset/img/slider_gallery/slider_pic_2.jpg" alt="img">
+                </div>
+                <!-- Slider Item -->
+                <div class="gallery-item">
+                    <img src="./asset/img/slider_gallery/slider_pic_4.jpg" alt="img">
+                </div>
+            </div>
+            <div class="slider-btn">
+                <button><i class='bx bx-chevrons-left'></i></button>
+                <button><i class='bx bx-chevrons-right'></i></button>
+            </div>
+
+            <!-- Trending -->
+            <div class="trending">
+                <h2  id="trending" class="trending-title">Trending Lately</h2>
+                <div class="trending-options">
+                    <button id="trending-new" class="all-choosed">New</button>
+                    <button id="trending-vn" class="">Vietnam</button>
+                    <button id="trending-global" class="">Global</button>
+                </div>
+                <div class="trending-items-new ">
+                    <div class="column_1"> </div>
+                    <div class="column_2"> </div>
+                    <div class="column_3"> </div>
+                </div>
+                <div class="trending-items-vn disappear">
+                    <div class="column_1"> </div>
+                    <div class="column_2"> </div>
+                    <div class="column_3"> </div>
+                </div>
+                <div class="trending-items-global disappear">
+                    <div class="column_1"> </div>
+                    <div class="column_2"> </div>
+                    <div class="column_3"> </div>
+                </div>
+            </div>
+
+            <!-- Top Artists -->
+            <div class="top-artist">
+                <!-- Title -->
+                <h2 id="top-playlist" class="top-artist-heading">Top Artists</h2>
+                <!-- Artist Items Block -->
+                <div class="top-artist__items">
+                    <!-- Artist Item Son Tung M-TP -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/artists/sontungmtp.webp" alt="mtp">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Sơn Tùng M-TP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item G-Dragon -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/artists/gd.webp" alt="gd">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>G-Dragon</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Amee -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/artists/amee.webp" alt="amee">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Amee</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Grey-D -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/artists/grey-d.webp" alt="grey-d">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Grey-D</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Charlie Puth -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/artists/charlieputh.webp" alt="hoang_thuy_linh">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Charlie Puth</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Top 100 -->
+            <div class="top-artist">
+                <h2 class="top-artist-heading">Top 100</h2>
+
+                <div class="top-artist__items">
+
+                    <!-- Artist Item Son Tung M-TP -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/top_100/top_100_country.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Top 100 Country</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item G-Dragon -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/top_100/top_100_edm.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Top 100 EDM</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Amee -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/top_100/top_100_indie.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Top 100 Indie</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Grey-D -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/top_100/top_100_jpop.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Top 100 J-POP</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Hoang Thuy Linh -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/top_100/top_100_vpop.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Top 100 V-POP</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You May Wanna Hear -->
+            <div class="top-artist">
+                <h2 class="top-artist-heading">You May Wanna Hear...</h2>
+
+                <div class="top-artist__items">
+
+                    <!-- Artist Item Son Tung M-TP -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/u_may_wanna_hear/80s_dance.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>80s Dance</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item G-Dragon -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/u_may_wanna_hear/kpop_collabs.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>K-POP Collabs</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Amee -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/u_may_wanna_hear/peaceful_piano.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Peaceful Piano</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Grey-D -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/u_may_wanna_hear/pop_princess.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>POP Princess</h3>
+                        </div>
+                    </div>
+
+                    <!-- Artist Item Hoang Thuy Linh -->
+                    <div class="top-artist__item">
+                        <div class="box">
+                            <div id="layer">
+                                    <div id="icon-container">
+                                        <div id="icon" >
+                                            <i class='bx bx-heart'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-play-circle big-font'></i>
+                                        </div>
+                                        <div id="icon" >
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                            <img src="./asset/img/u_may_wanna_hear/back_to_2000's.webp" alt="">
+                        </div>
+                        <!-- <button>Click Me!</button> -->
+                        <div class="name">
+                            <h3>Back To 2000's</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tune Chart -->
+            <div class="chart-container">
+                <h2 id="chart" class="">#tuneChart</h2>
+                <!-- Top 10 Chart -->
+                <div class="main-chart">
+                    
+                </div>
+                <!-- Week Chart Section -->
+                <div class="week-chart">
+                    <div class="week-chart-heading">
+                        <h1>Week Charts</h1>
+                    </div>
+
+                    <!-- Week Chart Column Container -->
+                    <div class="week-chart-container">
+                        <!-- Column 1 -->
+                        <div class="week-chart-column-1">
+                            <h2>Vietnam</h2>
+                            <!-- Item Container -->
+                            <div class="week-chart-items">
+                                
+                            </div>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="week-chart-column-2">
+                            <h2>K-Pop</h2>
+                            <!-- Item Container -->
+                            <div class="week-chart-items">
+                                
+                            </div>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="week-chart-column-3">
+                            <h2>US-UK</h2>
+                            <!-- Item Container -->
+                            <div class="week-chart-items">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Week Chart Icons -->
+                <div class="week-chart-icons">
+                    <div class="week-chart-icon">
+                        <img src="./asset/img/charts/song-vn-2x.jpg" alt="week-chart">
+                    </div>
+                    <div class="week-chart-icon">
+                        <img src="./asset/img/charts/web_song_kpop.jpg" alt="week-chart">
+                    </div>
+                    <div class="week-chart-icon">
+                        <img src="./asset/img/charts/web_song_usuk.jpg" alt="week-chart">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radio -->
+            <div class="radio-container">
+                <h2 id="radio" class="">RADIO Zone</h2>
+
+                <div class="radio-items-container">
+                    <!-- Radio Item -->
+                    <div class="radio-item">
+                        <!-- Img Container -->
+                        <div class="radio-img">
+                            <!-- Layer -->
+                            <div id="radio-layer">
+                                <div id="icon" >
+                                    <i class='bx bx-play-circle big-font'></i>
+                                </div>
+                            </div>
+                            <!-- Img -->
+                            <img src="./asset/img/radio/xone.webp" alt="">
+                        </div>
+
+                        <h3>XONE Radio</h3>
+                        <p>137 listener</p>
+                    </div>
+                    <!-- Radio Item -->
+                    <div class="radio-item">
+                        <!-- Img Container -->
+                        <div class="radio-img">
+                            <!-- Layer -->
+                            <div id="radio-layer">
+                                <div id="icon">
+                                    <i class='bx bx-play-circle big-font'></i>
+                                </div>
+                            </div>
+                            <!-- Img -->    
+                            <img src="./asset/img/radio/vpop.webp" alt="">
+                        </div>
+                        <h3>V-POP</h3>
+                        <p>864 listener</p>
+                    </div>
+                    <!-- Radio Item -->
+                    <div class="radio-item">
+                        <!-- Img Container -->
+                        <div class="radio-img">
+                            <!-- Layer -->
+                            <div id="radio-layer">
+                                <div id="icon" >
+                                    <i class='bx bx-play-circle big-font'></i>
+                                </div>
+                            </div>
+                            <!-- Img -->
+                            <img src="./asset/img/radio/radio_3.jpg" alt="">
+                        </div>
+                        <h3>Chạm (Touch)</h3>
+                        <p>1037 listener</p>
+                    </div>
+                    <!-- Radio Item -->
+                    <div class="radio-item">
+                        <!-- Img Container -->
+                        <div class="radio-img">
+                            <!-- Layer -->
+                            <div id="radio-layer">
+                                <div id="icon" >
+                                    <i class='bx bx-play-circle big-font'></i>
+                                </div>
+                            </div>
+                            <!-- Img -->
+                            <img src="./asset/img/radio/on_air.webp" alt="">
+                        </div>
+                        <h3>On Air</h3>
+                        <p>49 listener</p>
+                    </div>
+                    <!-- Radio Item -->
+                    <div class="radio-item">
+                        <!-- Img Container -->
+                        <div class="radio-img">
+                            <!-- Layer -->
+                            <div id="radio-layer">
+                                <div id="icon" >
+                                    <i class='bx bx-play-circle big-font'></i>
+                                </div>
+                            </div>
+                            <!-- Img -->
+                            <img src="./asset/img/radio/bolero.webp" alt="">
+                        </div>
+                        <h3>Bolero</h3>
+                        <p>25 listener</p>
+                    </div>
+                    <!-- Radio Item -->
+                    <div class="radio-item">
+                        <!-- Img Container -->
+                        <div class="radio-img">
+                            <!-- Layer -->
+                            <div id="radio-layer">
+                                <div id="icon" >
+                                    <i class='bx bx-play-circle big-font'></i>
+                                </div>
+                            </div>
+                            <!-- Img -->
+                            <img src="./asset/img/radio/usuk.webp" alt="">
+                        </div>
+                        <h3>US-UK</h3>
+                        <p>403 listener</p>
+                    </div>
+                    <!-- Radio Item -->
+                    <div class="radio-item">
+                        <!-- Img Container -->
+                        <div class="radio-img">
+                            <!-- Layer -->
+                            <div id="radio-layer">
+                                <div id="icon" >
+                                    <i class='bx bx-play-circle big-font'></i>
+                                </div>
+                            </div>
+                            <!-- Img -->
+                            <img src="./asset/img/radio/kpop.webp" alt="">
+                        </div>
+                        <h3>K-POP</h3>
+                        <p>1086 listener</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music Partner -->
+            <div class="partner-container">
+                <h2 class="">Music PARTNERS</h2>
+
+                <!-- Partner Row Container -->
+                <div class="partner-item-container">
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/beggers.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/believe.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/danal.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/empire.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/FUGA.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/genie.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/hikoon.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/ingrooves.png" alt="">
+                    </div>
+                </div>
+                <!-- Partner Row Container -->
+                <div class="partner-item-container">
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/jsj.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/kakao.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/monstercat.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/orcahrd.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/SM-Entertainment.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/sony.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/taihe.png" alt="">
+                    </div>
+                    <!-- Partner Item -->
+                    <div class="partner-item">
+                        <img src="./asset/img/music_partner/yg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <footer id="footer">
+                <p>myTune - Music is Passion @2023</p>
+            </footer>
+
+        </div>
+
+        <!-- Now Playing -->
+        <div class="now-playing mr">
+
+            <!-- Now Playing Header -->
+            <div class="now-playing-header">
+                <div class="options">
+                    <div class="playlist"><p>Playlist</p></div>
+                    <div class="recent-play"><p>Recent</p></div>
+                </div>
+                <i class='bx bx-timer'></i>
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <!-- Next Songs -->
+            <div class="next-song">
+                <!-- Header -->
+                <div class="next-song__header">
+                    <h4>Next Songs</h4>
+                    <p>from album <a href="#">My Album</a></p>
+                </div>
+                <!-- List -->
+                <div class="next-song__list"> </div>
+            </div>
+            <!-- Playing -->
+            <div class="playing"> </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========== MUSIC PLAYER ========== -->
+    <div class="music-player disappear">
+
+        <!-- Playing Info -->
+        <div class="playing-info">
+            <!-- <p class="start__title">Press "Play" icon to start!</p> -->
+            <!-- <p class="playing-info-para"></p> -->
+            <div class="playing-item" >
+
+                <!-- Thumbnail -->
+                <div class="playing-thumbnail">
+                    <img src="./asset/img/thumbnail/thumbnail_global.png" alt="icon">
+                </div>
+
+                <!-- Info -->
+                <div class="song-info">
+                    <h4>Song Name</h4>
+                    <p>Artist</p>
+                </div>
+
+                <!-- Icons -->
+                <div class="playing-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                </div>
+            </div>
+        </div>
+        <!-- PLAYER -->
+        <div class="player">
+            <!-- Levels -->
+            <div class="player-level">
+                <button><i class='bx bx-shuffle'></i></button>
+                <button><i class='bx bx-skip-previous'></i></button>
+                <!-- Play / Pause -->
+                <div class="play-btn">
+                    <button class="playSong"><i class='bx bx-play-circle'></i></button>
+                    <button class="pauseSong disappear"><i class='bx bx-pause-circle'></i></button>
+                </div>
+                <button><i class='bx bx-skip-next'></i></button>
+                <!-- Repeat -->
+                <div class="repeat-btn">
+                    <button class="repeat-all"><i class='bx bx-repeat'></i></button>
+                    <button class="repeat-one disappear">1</button>
+                </div>
+            </div>
+            <!-- Timer -->
+            <div class="player-timer">
+                <p class="time-playing">00:00</p>
+                <input type="range" name="song-timer" id="time-slider">
+                <p class="time-duration">3:59</p>
+            </div>
+        </div>
+        <!-- Options -->
+        <div class="player-option">
+            <button><i class='bx bxs-book-content'></i></button>
+            <button><i class='bx bx-devices'></i></button>
+            <button><i class='bx bx-volume-full'></i></button>
+            <!-- Volume -->
+            <input type="range" name="" id="volume" value="30" step="1" min="0" max="100">
+            <!-- Line -->
+            <div class="option-line">
+                <!-- Close Player Btn -->
+                <button class="player-close"><i class='bx bx-x-circle'></i></button>
+            </div>
+        </div>
+
+        <!-- Audio -->
+        <audio id="song" src=""></audio>
+    </div>
+
+    <!-- Script -->
+    <script src="./asset/js/main.js"></script>
+</body>
+</html>
+
+
+<!-- <i class='bx bx-plus-circle'></i>   -->
